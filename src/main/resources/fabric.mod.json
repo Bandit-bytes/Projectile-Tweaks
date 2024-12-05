@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "projectile_tweaks",
+  "version": "${version}",
+  "name": "Projectile Tweaks",
+  "description": "Adjust incoming projectile damage to entities",
+  "authors": ["Bandit-Bytes"],
+  "contact": {
+    "repo": "https://github.com/lewis/Projectile Tweaks"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/projectile_tweaks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.bandit.pt.client.ProjectileTweaksClient"
+    ],
+    "main": [
+      "net.bandit.pt.ProjectileTweaksMod"
+    ]
+  },
+  "mixins": [
+    "projectiletweaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
